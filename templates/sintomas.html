@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Síntomas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+
+<body>
+    <h1>Formulario de Síntomas</h1>
+    <form method="POST" action="/diagnostico">
+        <p>Selecciona los síntomas que tienes:</p>
+
+        <label><input type="checkbox" name="sintomas" value="congestion"> Congestión nasal</label><br>
+        <label><input type="checkbox" name="sintomas" value="diarrea"> Diarrea</label><br>
+        <label><input type="checkbox" name="sintomas" value="dificultad_respirar"> Dificultad para respirar</label><br>
+        <label><input type="checkbox" name="sintomas" value="debilidad"> Debilidad o fatiga extrema</label><br>
+        <label><input type="checkbox" name="sintomas" value="dolor_abdominal"> Dolor abdominal</label><br>
+        <label><input type="checkbox" name="sintomas" value="dolor_cabeza"> Dolor de cabeza</label><br>
+        <label><input type="checkbox" name="sintomas" value="dolor_garganta"> Dolor de garganta</label><br>
+        <label><input type="checkbox" name="sintomas" value="dolor_muscular"> Dolor muscular</label><br>
+        <label><input type="checkbox" name="sintomas" value="erupcion"> Erupción cutánea</label><br>
+        <label><input type="checkbox" name="sintomas" value="escalofrios"> Escalofríos</label><br>
+        <label><input type="checkbox" name="sintomas" value="estreñimiento"> Estreñimiento</label><br>
+        <label><input type="checkbox" name="sintomas" value="fatiga"> Fatiga</label><br>
+        <label><input type="checkbox" name="sintomas" value="fiebre"> Fiebre</label><br>
+        <label><input type="checkbox" name="sintomas" value="ictericia"> Ictericia (piel u ojos amarillos)</label><br>
+        <label><input type="checkbox" name="sintomas" value="nauseas"> Náuseas</label><br>
+        <label><input type="checkbox" name="sintomas" value="perdida_apetito"> Pérdida de apetito</label><br>
+        <label><input type="checkbox" name="sintomas" value="perdida_olfato"> Pérdida de olfato o gusto</label><br>
+        <label><input type="checkbox" name="sintomas" value="sudoracion"> Sudoración excesiva</label><br>
+        <label><input type="checkbox" name="sintomas" value="estornudos"> Estornudos</label><br>
+        <label><input type="checkbox" name="sintomas" value="tos"> Tos</label><br>
+        <label><input type="checkbox" name="sintomas" value="vomitos"> Vómitos</label><br><br>
+
+        <input type="submit" value="Obtener diagnóstico">
+    </form>
+</body>
+
+</html>

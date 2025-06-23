@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado del Diagnóstico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <h1>Resultado del Diagnóstico</h1>
+
+    <div class="resultado-container">
+        <h2>Síntomas seleccionados:</h2>
+        <ul>
+            {% for sintoma in sintomas %}
+                <li>{{ sintoma.replace("_", " ").capitalize() }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Diagnóstico preliminar:</h2>
+        <p>{{ diagnostico }}</p>
+
+        <a href="/sintomas">
+            <button>Volver al formulario</button>
+        </a>
+    </div>
+</body>
+</html>
